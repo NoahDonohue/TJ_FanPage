@@ -1,0 +1,64 @@
+#main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows 1fr 5fr 1fr;
+  grid-template-areas:
+"border1 header border2"
+"border1 content border2"
+"border1 footer border2";
+  border-color:#ED174C;
+  border-width: 10px;
+border-style: solid;
+  
+  }
+
+#title{
+  grid-area: header;
+  text-align: center;
+  background-color: #C4CED4 ;
+}
+
+
+#leftborder{
+  grid-area: border1;
+  background-color: #006BB6;
+  }
+#rightborder{
+  grid-area: border2;
+  background-color: #006BB6;
+  }
+
+#img-div{
+ border-color:  #C4CED4;
+ grid-area: content;
+border-width: 15px;
+border-style: solid;
+ border-bottom: 5px silver solid; 
+  
+}
+#image{
+ max-width: 100%;
+  display: block;
+height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+#img-caption{
+  text-align: center;
+}
+
+#tribute-info{
+    border-color:  #C4CED4;
+  border-width: 15px;
+  border-style: solid;
+  border-bottom: none;
+  border-top: none;
+}
+
+#linkinfo{
+  grid-area: footer;
+  text-align: center;
+  margin-top: 50px;
+}
+
